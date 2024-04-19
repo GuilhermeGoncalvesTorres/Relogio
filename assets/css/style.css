@@ -8,7 +8,7 @@ font-family: 'Roboto Slab';
 
 body{
     height: 100vh;
-    background: linear-gradient(120deg,rgb(0, 0, 255),rgb(255, 115, 0));
+    background: linear-gradient(120deg,rgb(0, 0, 255),rgb(255, 115, 0)); /*Cria um degrade de cores*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,14 +16,39 @@ body{
 
 }
 .relogio{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    height: 200px;
-    width: 550px;
-    background: transparent;
-    border-radius: 3px;
-    box-shadow: 0px 8px 10px rgba(0, 0, 0, .5);
+    display: flex; /*Flexibiliza os displays kkk*/
+    align-items: center; /*Centraliza sentido horizontal*/
+    justify-content: space-around; /*Espaçamento das caixas*/
+    height: 200px; /*Alturas*/
+    width: 550px; /*Largura*/
+    background: transparent; /*Cor da caixa transparente*/
+    border-radius: 5px; /*Arredodamento da borda*/
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, .5); /*Sombra da caixa... darr*/
 
 
+}
+
+.relogio div{
+height: 170px; /*Alturas*/
+width: 150px; /*Largura*/
+display: flex; /*Flexibiliza os displays kkk*/
+flex-direction: column; /*Organiza as escritas em coluna*/
+align-items: center; /*Centraliza sentido horizontal*/
+justify-content: center; /*Centraliza sentido vertical*/
+color: #fff; /*Cor das Letras*/
+background: rgba(5, 5, 5, .9); /*Cor da caixa*/
+box-shadow: 5px 5px 15px rgba(0, 0, 0, .7); /*Sombra da caixa... darr*/
+border-radius: 7px; /*bordas arrednondadas*/
+letter-spacing: 3px ; /*Espaçamento das letras... darr2*/
+}
+
+.relogio span{
+    font-weight: bolder;
+    font-size: 60px;
+
+
+}
+
+.relogio span.tempo{
+font-size: 10px;
 }
